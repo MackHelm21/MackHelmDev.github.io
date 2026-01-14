@@ -1,138 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mack Helm | Computer Science Student</title>
-    <meta name="description" content="Portfolio of Mack Helm, Computer Science student with interests in software development and cyber security.">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mack Helm | Developer Portfolio</title>
 
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap');
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+:root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --text: #c9d1d9;
+    --accent: #00f0ff;
+    --soft: #8b949e;
+}
 
-        header p {
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
-            color: #ccc;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 2.5rem 1rem;
-        }
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
 
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5rem;
-        }
+header {
+    padding: 4rem 1rem;
+    text-align: center;
+}
 
-        .project {
-            background: #fff;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
+header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    color: var(--accent);
+}
 
-        .project h3 {
-            margin-top: 0;
-        }
+header p {
+    color: var(--soft);
+    margin-top: 0.5rem;
+}
 
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 2.5rem 1rem;
+}
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+h2 {
+    font-family: 'JetBrains Mono', monospace;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+.card {
+    background: var(--panel);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #222;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(0,240,255,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.tags {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--soft);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: var(--soft);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>Mack Helm</h1>
-    <p>Computer Science Undergraduate | Software & Cyber Security</p>
+    <p>Computer Science Undergraduate • Software & Cyber Security</p>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science undergraduate with a strong interest in software development,
-        cyber security, and problem solving. I enjoy building practical projects that apply
-        object-oriented programming and core computer science concepts.
-    </p>
+    <h2>About</h2>
+    <div class="card">
+        <p>
+            Computer Science undergraduate with a strong interest in Python development,
+            cyber security, and problem solving. I enjoy turning theory into practical,
+            real-world systems and continuously developing my technical skills.
+        </p>
+    </div>
 </section>
 
 <section>
     <h2>Projects</h2>
 
-    <div class="project">
-        <h3>Housing Allocation System (Python)</h3>
+    <div class="card">
+        <h3>Housing Allocation System</h3>
         <p>
-            A Python application designed using object-oriented principles such as classes,
-            inheritance, and polymorphism to model a housing allocation process.
+            Python application using object-oriented design to model housing allocation,
+            focusing on maintainability, clarity, and real-world structure.
         </p>
-        <p><strong>Skills:</strong> Python, OOP, program design</p>
+        <div class="tags">Python • OOP • Program Design</div>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Flask Web Applications</h3>
         <p>
-            Developed small web applications using Flask, focusing on routing, templates,
-            and basic database interaction.
+            Built web apps with Flask featuring routing, templates, and simple backend logic.
         </p>
-        <p><strong>Skills:</strong> Python, Flask, HTML/CSS</p>
+        <div class="tags">Python • Flask • HTML • CSS</div>
     </div>
 
-    <div class="project">
+    <div class="card">
         <h3>Cyber Security Labs</h3>
         <p>
-            Completed practical cyber security exercises on platforms such as TryHackMe,
-            covering networking fundamentals and Linux usage.
+            Practical hands-on security labs using Linux and networking fundamentals.
         </p>
-        <p><strong>Skills:</strong> Linux, networking basics, security awareness</p>
+        <div class="tags">Linux • Networking • Security Fundamentals</div>
     </div>
 
 </section>
 
 <section>
     <h2>Contact</h2>
-    <p>
-        Email: <a href="mailto:your.email@example.com">mackenzie.helm@hotmail.com</a><br>
-        GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/MackHelm21</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin.com/in/mack-helm</a>
-    </p>
+    <div class="card">
+        <p>Email: <a href="mackenzie.helm@hotmail.com">mackenzie.helm@hotmail</a></p>
+        <p>GitHub: <a href="https://github.com/MackHelm21">github.com/MackHelm21</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/mack-helm">linkedin.com/in/mack-helm</a></p>
+    </div>
 </section>
 
 <footer>
-    © 2025 Mack Helm
+    © 2026 Mack Helm
 </footer>
 
 </body>
 </html>
+
